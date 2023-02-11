@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My<span class="h1-span">Library</span></h1>
+    <br />
+    <div id="form">
+      <form action="#">
+        <div class="userInput">
+          <label for="Title">Title</label>
+          <input type="text" name="title" id="title" />
+        </div>
+        <div class="userInput">
+          <label for="Author">Author</label>
+          <input type="text" name="author" id="author" />
+        </div>
+        <div class="userInput">
+          <label for="Pages">Pages</label>
+          <input type="text" name="pages" id="pages" />
+        </div>
+        <div class="userInput">
+          <label for="Read Book">Read (y/n)</label>
+          <input type="text" name="haveRead" id="haveRead" />
+        </div>
+        <div class="newBook">
+          <button type="submit" class="addBook" onsubmit="addBookToLibrary()">
+            Add new book
+          </button>
+        </div>
+      </form>
+    </div>
+    <table class="tb">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read</th>
+          <th></th>
+        </tr>
+        <span id="t-header"></span>
+      </thead>
+      <tbody id="libraryList"></tbody>
+    </table>
+    <br />
+  </body>
+</html>
